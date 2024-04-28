@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Fauzan Gifari Dzul Fahmi - 2209116042</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.13.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.13.3/jquery-ui.css" />
+  </head>
+  <body style="font-size: 70%">
+    <div id="kotakdialog" title="Accordion dalam kotak dialog">
+      <div id="isi">
+        <h2><a href="#">Aturan 1</a></h2>
+        <div>Wajib mengisi form registrasi</div>
+        <h2><a href="#">Aturan 2</a></h2>
+        <div>Semua isian adalah benar</div>
+        <h2><a href="#">Aturan 3</a></h2>
+        <div>Bila mengandung informasi tidak benar, akan dituntut menurut hukum yang berlaku</div>
+      </div>
+    </div>
+    <script>
+      $("document").ready(function () {
+        $("#kotakdialog").dialog({
+          show: true,
+          hide: true,
+          buttons: {
+            "Ok, Saya Setuju": function () {
+              $(this).dialog("close");
+            },
+            Cancel: function () {
+              $(this).dialog("close");
+            },
+          },
+        });
+        $("#isi").accordion();
+      });
+    </script>
+  </body>
+</html>

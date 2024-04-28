@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Fauzan Gifari Dzul Fahmi - 2209116042</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.13.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.13.3/jquery-ui.css" />
+  </head>
+  <body style="font-size: 95%">
+    <div id="pesan" title="Nasehat hari ini">
+      Sukses bukanlah kebahagiaan. Kebahagiaan kunci kesuksesan. Jika senantiasa
+      melakukan segala sesuatu dengan penuh cinta, maka anda akan sukses!
+    </div>
+    <input type="submit" id="buka" value="buka kotak dialog" />
+    <script>
+      $("document").ready(function () {
+        $("#pesan").dialog({ autoOpen: false });
+        $("#buka").click(function () {
+          $("#pesan").dialog("open");
+        });
+      });
+    </script>
+  </body>
+</html>

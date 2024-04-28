@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Fauzan Gifari Dzul Fahmi - 2209116042</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <style type="text/css">
+      div {
+        background: yellow;
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin: 10px;
+        cursor: pointer;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p>klik dua kali pada setiap kotak untuk mengubah warnanya</p>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <script>
+      $("document").ready(function () {
+        $("div").dblclick(function () {
+          $(this).css({ background: "red" });
+        });
+      });
+    </script>
+  </body>
+</html>
